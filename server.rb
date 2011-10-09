@@ -2,6 +2,15 @@ require "sinatra"
 
 set :port, 3000
 
+before do
+  custom_headers = {
+    'Access-Control-Allow-Origin' => 'http://development.chaschdasjs.com',
+    'Access-Control-Max-Age' => '3628800',
+    'Access-Control-Allow-Methods' => 'GET, OPTIONS, PUT, DELETE, PATCH, POST'
+  }
+  headers custom_headers
+end
+
 get '/' do
   redirect '/index.html'
 end
