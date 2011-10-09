@@ -16,3 +16,9 @@ edit /etc/hosts so that
     ruby server.rb
 
 go to test.chaschdasjs.com
+
+
+## Roadmap/Goal
+
+The idea is to have this application run on a server, so that different
+browsers can access it. It then would gather the test results and aggregate them on a summary page.
